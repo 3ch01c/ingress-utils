@@ -1,5 +1,5 @@
 # Counts player stats and outputs to CSV
-echo "Agent,MU gained,Portals captured,Resonators deployed,Links created,Fields created,Resonators destroyed,Links destroyed,Fields destroyed,MU freed"
+echo "Agent,MU captured,Portals captured,Resonators deployed,Links created,Fields created,Resonators destroyed,Links destroyed,Fields destroyed,MU freed"
 PLAYERS=`cut -f2 $1 | sort -f | uniq | grep '^<' | sed 's/[<>]//g'`
 for PLAYER in $PLAYERS
 do
